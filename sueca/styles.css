@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006400;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+#cartas-container img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+#cartas-container img:active,
+#cartas-container img.selected {
+    opacity: 0.6;
+    filter: brightness(0.7);
+}
+
+.carta {
+    width: 100px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
